@@ -1,99 +1,78 @@
-Salary Prediction (Regression Problem)
+# Salary Prediction Model
 
-Overview
+## Steps Involved
 
-This project demonstrates a simple Salary Prediction model using Linear Regression. The dataset contains information on employees' years of experience and their corresponding salaries. The goal is to train a model that can predict salary based on experience.
+### 1. Import Required Libraries
+- **Pandas**: For data manipulation.
+- **NumPy**: For numerical operations.
+- **Matplotlib & Seaborn**: For data visualization.
+- **Scikit-learn**: For building the regression model.
 
-Dataset
+### 2. Load and Explore Data
+- Check for missing values, data types, and statistical summary.
+- Visualize data using scatter plots.
 
-The dataset (Salary.csv) consists of two columns:
+### 3. Prepare Data
+- Split the data into training and testing sets.
 
-YearsExperience: Number of years of experience of an employee.
+### 4. Train the Model
+- Use **Linear Regression** from `sklearn.linear_model`.
 
-Salary: Corresponding salary of the employee.
+### 5. Test the Model
+- Predict salary values for test data.
+- Compare actual vs predicted values.
 
-The dataset contains 35 observations.
+### 6. Visualize Results
+- Plot regression lines on training and testing data.
 
-Dependencies
+### 7. Evaluate Model
+- Calculate **R-squared score** and **RMSE**.
 
-To run this project, you need the following Python libraries:
+### 8. Make Custom Predictions
+- Predict salary for a given experience value.
 
-pip install pandas numpy matplotlib seaborn scikit-learn
+---
 
-Steps Involved
+## Model Performance
+- **R-squared score**: `0.9786`
+- **Root Mean Squared Error (RMSE)**: `3939.85`
 
-Import Required Libraries:
+---
 
-Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn.
-
-Load and Explore Data:
-
-Check for missing values, data types, and statistical summary.
-
-Visualize data using scatter plots.
-
-Prepare Data:
-
-Split the data into training and testing sets.
-
-Train the Model:
-
-Use Linear Regression from sklearn.linear_model.
-
-Test the Model:
-
-Predict salary values for test data.
-
-Compare actual vs predicted values.
-
-Visualize Results:
-
-Plot regression lines on training and testing data.
-
-Evaluate Model:
-
-Calculate R-squared score and RMSE.
-
-Make Custom Predictions:
-
-Predict salary for a given experience value.
-
-Model Performance
-
-R-squared score: 0.9786
-
-Root Mean Squared Error (RMSE): 3939.85
-
-Usage
-
+## Usage
 Run the script using:
 
+```bash
 python salary_prediction.py
+```
 
 To predict salary for a custom experience value:
 
+```python
 exp = 5
 predicted_salary = lr.predict([[exp]])[0]
 print(f"Salary of {exp} year experience employee = {int(predicted_salary)} thousands")
+```
 
-Results
+---
 
-The model accurately predicts salaries based on years of experience with a high R-squared score.
+## Results
+- The model accurately predicts salaries based on years of experience with a high **R-squared score**.
+- The regression line visually fits the data well.
 
-The regression line visually fits the data well.
+---
 
-Future Enhancements
+## Future Enhancements
+- Implement **polynomial regression** for better predictions.
+- Try **feature engineering** by adding additional parameters.
+- Improve model performance using different ML algorithms.
 
-Implement polynomial regression for better predictions.
+---
 
-Try feature engineering by adding additional parameters.
+## Author
+Developed by **[Your Name]**
 
-Improve model performance using different ML algorithms.
+---
 
-Author
-
-Developed by [Your Name]
-
-License
-
-This project is open-source and available under the MIT License.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
