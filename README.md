@@ -70,7 +70,7 @@ print(f"Salary of {exp} year experience employee = {int(predicted_salary)} thous
 ---
 
 ## Author
-Developed by **[Your Name]**
+Developed by **[Manda Pavan Kalyan]**
 
 ---
 
